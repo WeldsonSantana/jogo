@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taíse adivinhe qual o número</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="conteudo">
+    <h1>Jogo</h1>
+    <h2>Taíse acerte o número! 🎯</h2>
+
+    <p>
+      Boyzinha, é o seguinte! Escolha um número entre 1 e 100. <br>Você tem 10 chances pra acertar.
+      <br>Eu vou te dizendo se tu tá chutando muito alto ou muito baixo!
+    </p>
+</div>
+    <div class="form">
+      <label for="guessField">Digite um número: </label>
+      <input
+        type="number"
+        min="1"
+        max="100"
+        required
+        id="guessField"
+        class="guessField" />
+      <input type="submit" value="Teste o número" class="guessSubmit" />
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
